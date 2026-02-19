@@ -48,8 +48,7 @@ export const draftsSlice = createSlice({
         return;
       }
       delete state.items[state.activeDraftId];
-      const nextDraftId = Object.keys(state.items)[0] ?? null;
-      state.activeDraftId = nextDraftId;
+      state.activeDraftId = Object.keys(state.items)[0] ?? null;
     },
     clearAllDrafts: (state) => {
       state.items = {};

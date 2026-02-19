@@ -38,10 +38,6 @@ export const filterLogs = (logs: ServiceLog[], filters: ServiceLogFilters): Serv
       return false;
     }
 
-    if (filters.startDateTo && log.startDate > filters.startDateTo) {
-      return false;
-    }
-
-    return true;
+    return !(filters.startDateTo && log.startDate > filters.startDateTo);
   });
 };

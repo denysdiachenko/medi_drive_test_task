@@ -1,6 +1,6 @@
 import type { ServiceLogFormValues } from '@type/serviceLog';
+import { getDefaultDates } from '@utils/dateUtils';
 import * as yup from 'yup';
-import { getDefaultDates } from '../utils/dateUtils';
 
 const { startDate, endDate } = getDefaultDates();
 
