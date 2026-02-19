@@ -1,0 +1,41 @@
+{
+  "name": "medidrive-service-logs",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "npm run typecheck && npm run biome:check",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "biome:check": "biome check .",
+    "biome:lint": "biome lint .",
+    "biome:format": "biome format . --write"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@hookform/resolvers": "^3.10.0",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
+    "@reduxjs/toolkit": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.54.2",
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.2",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vitest": "^4.0.18"
+  }
+}

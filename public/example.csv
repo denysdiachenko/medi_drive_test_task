@@ -1,0 +1,4 @@
+providerId,serviceOrder,carId,odometer,engineHours,startDate,endDate,type,serviceDescription
+P-1001,SO-0001,CAR-001,152300,840,2026-02-20,2026-02-21,planned,Quarterly preventive maintenance and diagnostics
+P-2044,SO-0002,CAR-114,187450,920,2026-02-21,2026-02-22,unplanned,Unexpected oil leak repair and seal replacement
+P-7780,SO-0003,CAR-228,201000,1015,2026-02-22,2026-02-23,emergency,Emergency brake line failure repair
