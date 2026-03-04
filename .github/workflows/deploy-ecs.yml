@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       AWS_REGION: eu-central-1
-      ECR_REPOSITORY: medidrive-logs
+      ECR_REPOSITORY: my-app
       ECS_CLUSTER: my-cluster
       ECS_SERVICE: my-service
     steps:
@@ -22,7 +22,7 @@ jobs:
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::<ACCOUNT_ID>:role/github-actions-ecs
+          role-to-assume: arn:aws:iam::493919099383:role/github-actions-ecs
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Login to Amazon ECR
